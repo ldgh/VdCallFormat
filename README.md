@@ -6,7 +6,7 @@ A simple plugin to open VCF and BCF files in Visidata using cyvsf2 to parse the 
 1) Install [Visidata](https://github.com/saulpw/visidata)
 2) Install [cyvcf2](https://github.com/brentp/cyvcf2)
 3) Create the directory: ```mkdir -p ~/.visidata/plugins```
-4) Download the plugin to the directory creted: ```wget -P ~/.visidata/plugins https://raw.githubusercontent.com/rafaeltou/VdCallFormat/refs/heads/main/VdCallFormat.py -o```
+4) Download the plugin to the directory creted: ```wget -P ~/.visidata/plugins https://raw.githubusercontent.com/rafaeltou/VdCallFormat/refs/heads/main/VdCallFormat.py```
 5) Add the plugin to  ~/.visidatarc: ```echo "import plugins.VdCallFormat" >> ~/.visidatarc```
 
 ## Usage
@@ -18,7 +18,7 @@ The usage is very simple. Once installed, you just point the Visidata to the vcf
 ```--threads=number```: for the number of threads used in the file parsing in cyvcf2. In my tests it doesn't make much difference. the standard value is 4.
 
 
-```--region=chr:posBegin-posEnd```: for specifying the region you want to see. To use this option, you need the variant file indexed, otherwise it will fail. Also, i recommend always using this option if your file is too big, since the visidata will load all of it to the computer's RAM.
+```--region=chr:posBegin-posEnd```: for specifying the region you want to see. You can use ```--region=chr:posBegin``` to see a single position and ```--region=chr``` to see an entire chromossome. This option requires your variant file to be indexed, otherwise it will fail. I recommend always using this option if your file is too big, since the visidata will load all of it to the computer's RAM.
 
 
 Example:
