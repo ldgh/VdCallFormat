@@ -1,7 +1,7 @@
 # VdCallFormat
 A simple plugin to open VCF and BCF files in Visidata using cyvsf2 to parse the files.
 
-##Installation
+## Installation
 
 1) Install [Visidata](https://github.com/saulpw/visidata)
 2) Install [cyvcf2](https://github.com/brentp/cyvcf2)
@@ -9,11 +9,11 @@ A simple plugin to open VCF and BCF files in Visidata using cyvsf2 to parse the 
 4) Download the plugin to the directory creted: ```wget -P ~/.visidata/plugins https://raw.githubusercontent.com/rafaeltou/VdCallFormat/refs/heads/main/VdCallFormat.py -o```
 5) Add the plugin to  ~/.visidatarc: ```echo "import plugins.VdCallFormat" >> ~/.visidatarc```
 
-##Usage
+## Usage
 
 The usage is very simple. Once installed, you just point the Visidata to the vcf(.gz)/bcf file, eg: ```vd file.vcf```
 
-Options:
+### Options:
 
 ```--threads=number```: for the number of threads used in the file parsing in cyvcf2. In my tests it doesn't make much difference. the standard value is 4.
 
