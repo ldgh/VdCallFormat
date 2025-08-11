@@ -41,3 +41,7 @@ for specifying the region you want to see. You can use ```--region=chr:posBegin`
 
 ### Example:
 <img width="1167" height="727" alt="image" src="https://github.com/user-attachments/assets/c896321c-bb8c-4bd9-beb5-5fde1dd82f2e" />
+
+
+
+Developed by Rafael Tou (@rafaeltou)
