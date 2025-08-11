@@ -4,7 +4,7 @@ A simple plugin to open VCF and BCF files in Visidata using cyvcf2 to parse the 
 ## Installation
 
 1) Install [Visidata](https://github.com/saulpw/visidata)
-2) Install [cyvcf2](https://github.com/brentp/cyvcf2)
+2) Install [pysam](https://github.com/pysam-developers/pysam)
 3) Create the directory:
 ```
    mkdir -p ~/.visidata/plugins
