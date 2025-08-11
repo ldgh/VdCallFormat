@@ -14,8 +14,11 @@ A simple plugin to open VCF and BCF files in Visidata using cyvsf2 to parse the 
 The usage is very simple. Once installed, you just point the Visidata to the vcf(.gz)/bcf file, eg: ```vd file.vcf```
 
 Options:
-```--threads=number``` for the number of threads used in the file parcing in cyvcf2. In my tests it doesn't make much difference. the standard value is 4.
-```--region=chr:posBegin-posEnd``` for specifying the region you want to see. To use this option, you need to have the variant file indexed, otherwise it will fail. Also, i recommend always using this option if your file is too big, since the visidata will load all of it to the computer's RAM.
+
+```--threads=number```: for the number of threads used in the file parsing in cyvcf2. In my tests it doesn't make much difference. the standard value is 4.
+
+
+```--region=chr:posBegin-posEnd```: for specifying the region you want to see. To use this option, you need the variant file indexed, otherwise it will fail. Also, i recommend always using this option if your file is too big, since the visidata will load all of it to the computer's RAM.
 
 
 Example:
