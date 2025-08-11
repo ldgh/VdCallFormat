@@ -49,8 +49,8 @@ class PysamVcfSheet(SequenceSheet):
                             fetch_args.append(int(end_str))
                     else:
                         if pos_part:
-                            start_pos = int(pos_part)
-                            end_pos = start_pos + 1
+                            start_pos = int(pos_part) - 1
+                            end_pos = int(pos_part)
                             fetch_args.append(start_pos)
                             fetch_args.append(end_pos)
                 else:
